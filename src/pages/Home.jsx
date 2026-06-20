@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowRight, Star, Award, Users, BookOpen, ChevronRight, Quote } from 'lucide-react'
+import Results from '../pages/Results'
 
 function useCountUp(target, duration = 2000, start = false) {
   const [count, setCount] = useState(0)
@@ -271,6 +272,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Results />
 
       {/* CTA */}
       <section style={{
